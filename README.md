@@ -63,11 +63,9 @@ The initial code-capture pass used a separate, minimal config ([`esphome/rf-capt
 
 Once exposed via ESPHome's native API, the fan appears as a standard entity in Home Assistant. From there:
 
-- <!-- e.g. "Controllable via the standard HA dashboard fan card" -->
-- <!-- e.g. "Voice control via [Assistant/Alexa/etc.]" -->
-- <!-- e.g. "Scheduled automations — e.g. auto-off after X hours" -->
+- Controllable via the standard HA dashboard fan card
 
-See [`home-assistant/automations.yaml`](home-assistant/automations.yaml) for example automations built on top of this integration.
+A base automation is needed to track the fan when the physical remote or switch is used to control the fan. Please see the automation [`homeassistant/automation.yaml`](homeassistant/automation.yaml)
 
 ## What I'd Improve Next
 
