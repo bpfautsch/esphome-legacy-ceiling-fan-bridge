@@ -18,7 +18,7 @@ actions:
             data:
               percentage: 33
             target:
-              entity_id: fan.ceiling_fan
+              entity_id: fan.ceiling_fan # replace with your entity name
       - conditions:
           - condition: state
             entity_id: sensor.fan_speed_state # replace with your entity name
