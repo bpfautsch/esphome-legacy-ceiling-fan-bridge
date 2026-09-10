@@ -3,13 +3,13 @@ description: ''
 triggers:
   - trigger: state
     entity_id:
-      - sensor.fan_speed_state
+      - sensor.fan_speed_state # replace with your entity name
 conditions: []
 actions:
   - choose:
       - conditions:
           - condition: state
-            entity_id: sensor.fan_speed_state
+            entity_id: sensor.fan_speed_state # replace with your entity name
             state:
               - '1.0'
         sequence:
@@ -21,38 +21,38 @@ actions:
               entity_id: fan.ceiling_fan
       - conditions:
           - condition: state
-            entity_id: sensor.fan_speed_state
+            entity_id: sensor.fan_speed_state # replace with your entity name
             state:
               - '2.0'
         sequence:
           - action: fan.set_percentage
             metadata: {}
             target:
-              entity_id: fan.ceiling_fan
+              entity_id: fan.ceiling_fan # replace with your entity name
             data:
               percentage: 66
       - conditions:
           - condition: state
-            entity_id: sensor.fan_speed_state
+            entity_id: sensor.fan_speed_state # replace with your entity name
             state:
               - '3.0'
         sequence:
           - action: fan.set_percentage
             metadata: {}
             target:
-              entity_id: fan.ceiling_fan
+              entity_id: fan.ceiling_fan # replace with your entity name
             data:
               percentage: 100
       - conditions:
           - condition: state
-            entity_id: sensor.fan_speed_state
+            entity_id: sensor.fan_speed_state # replace with your entity name
             state:
               - '0.0'
         sequence:
           - action: fan.turn_off
             metadata: {}
             target:
-              entity_id: fan.ceiling_fan
+              entity_id: fan.ceiling_fan # replace with your entity name
             data: {}
 mode: single
 
