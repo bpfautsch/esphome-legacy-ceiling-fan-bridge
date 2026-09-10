@@ -1,0 +1,17 @@
+esphome:
+  name: rf-receiver-node
+
+esp32:
+  board: esp32dev
+
+remote_receiver:
+  - id: rf_receiver
+    pin: GPIO4                # Use your designated data pin
+    tolerance: 35%            # Tightened up to reduce ambient noise
+    filter: 150us             # Filters out high-frequency static
+    idle: 4ms                 # Tells ESP32 when a packet ends
+    buffer_size: 10kb         # Gives the ESP32 memory to hold long raw strings
+    dump:
+      - pronto                # <-- This will output raw hexadecimal codes
+      - raw                   # <-- Fallback microsecond pulse timing array
+
