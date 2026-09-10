@@ -45,8 +45,6 @@ The CC1101 communicates with the ESP32 over SPI:
 | MISO         | GPIO 19 (MISO)       | SPI Master In, Slave Out          |
 | GDO2         | Leave disconnected   | Optional — unused for basic OOK   |
 
-See [`docs/photos/`](docs/photos) for build photos and [`docs/wiring-diagram.png`](docs/wiring-diagram.png) for a visual reference of the table above.
-
 ### Secrets
 
 This config references WiFi credentials, the Home Assistant API encryption key, the OTA password, network details, and the captured RF codes via ESPHome's `!secret` mechanism. Copy [`esphome/secrets.yaml.example`](esphome/secrets.yaml.example) to `esphome/secrets.yaml`, fill in your own values, and it'll be excluded from git automatically (see `.gitignore`).
