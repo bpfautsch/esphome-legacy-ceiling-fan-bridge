@@ -24,11 +24,11 @@ Codes were captured directly with the ESP32 itself, before any transmit logic wa
 
 ## Hardware
 
-| Component        | Details                          |
-|-------------------|-----------------------------------|
-| Microcontroller   | ESP-WROOM-32 (ESP32-S)            |
-| RF Module         | CC1101 (SPI, sub-GHz transceiver) |
-| Enclosure         | <!-- optional --> |
+| Component         | Details                                             |
+|-------------------|-----------------------------------------------------|
+| Microcontroller   | ESP-WROOM-32 (ESP32-S)                              |
+| RF Module         | CC1101 (SPI, sub-GHz transceiver)                   |
+| Enclosure         | [Project Box](https://www.amazon.com/dp/B07W9H8M3Z) |
 
 ### Wiring
 
