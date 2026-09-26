@@ -32,7 +32,7 @@ Codes were captured directly with the ESP32 itself, before any transmit logic wa
 
 ### Wiring
 
-The CC1101 communicates with the ESP32 over SPI [`diagram/circuit_image.png`]({diagram/circuit_image.png}):
+The CC1101 communicates with the ESP32 over SPI [`diagram/circuit_image.png`](diagram/circuit_image.png):
 
 | CC1101 Pin   | ESP32 Pin           | Purpose                          |
 |--------------|----------------------|-----------------------------------|
