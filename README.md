@@ -34,16 +34,16 @@ Codes were captured directly with the ESP32 itself, before any transmit logic wa
 
 The CC1101 communicates with the ESP32 over SPI [`diagram/circuit_image.png`](diagram/circuit_image.png):
 
-| CC1101 Pin   | ESP32 Pin           | Purpose                          |
-|--------------|----------------------|-----------------------------------|
-| VCC          | 3.3V                 | Power (never use 5V)              |
-| GND          | GND                  | Ground                            |
-| GDO0         | GPIO 4 (or free GPIO)| Digital I/O — data for RX         |
-| CSN (CS)     | GPIO 5 (SS/CS)       | SPI chip select                   |
-| SCK (CLK)    | GPIO 18 (SCK)        | SPI clock                         |
-| MOSI         | GPIO 23 (MOSI)       | SPI Master Out, Slave In          |
-| MISO         | GPIO 19 (MISO)       | SPI Master In, Slave Out          |
-| GDO2         | GPOI 32 (GDO2)       | Crutial for radio state - TX      |
+| CC1101 Pin   | ESP32 Pin               | Purpose                           |
+|--------------|-------------------------|-----------------------------------|
+| VCC          | 3.3V                    | Power (never use 5V)              |
+| GND          | GND                     | Ground                            |
+| GDO0         | GPIO 4 (GDO0)           | Digital I/O — data for RX         |
+| CSN (CS)     | GPIO 5 (SS/CS)          | SPI chip select                   |
+| SCK (CLK)    | GPIO 18 (SCK)           | SPI clock                         |
+| MOSI         | GPIO 23 (MOSI)          | SPI Master Out, Slave In          |
+| MISO         | GPIO 19 (MISO)          | SPI Master In, Slave Out          |
+| GDO2         | GPOI 32 (or free GPIO)  | Crutial for radio state - TX      |
 
 ### Secrets
 
